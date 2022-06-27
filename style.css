@@ -1,0 +1,1066 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+body{
+    background-color: #000;
+    width: 97%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.2fr 0.6fr 0.5fr  0.4fr;
+    grid-template-columns: 0.4fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+    'menu home home home'
+    'menu card transact report'
+    'menu budget subscribe savings'
+    'menu budget loan tips';
+    gap: 10px;
+    /* padding-right: 40px; */   
+}
+
+/* home starts */
+
+.home{
+    grid-area: home;
+    border-radius: 10px;
+    background: rgb(15, 10, 10);
+    margin-top: 20px;
+}
+
+.home .home1{
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.home .home1 h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+} 
+
+.home .home1 .home2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.home .home1 .home2 img{
+    width: 30px;
+    filter: invert(1);
+}
+
+.home .home1 .home2 .orange{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(248, 69, 4);
+    position: absolute;
+    right: 7px;
+    top: 4px;
+}
+
+/* home end */
+
+/* menu starts */
+
+.menu{
+    grid-area: menu;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: rgb(10, 10, 10);
+    /* max-width: 300px; */
+}
+
+.menu .menu1{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 12px; */
+    padding-left: 20px;
+}
+
+.menu .menu1 .image{
+    display: flex;
+    gap: 20px;
+    align-items: center; 
+
+}
+
+.menu .menu1 .image .img1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.menu-detail {
+    margin-top: 10px;
+    height: 10px;
+}
+
+.menu-detail ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 50px;
+    
+}
+
+.menu-detail ul li{
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid transparent;
+    width: 96%;
+    height: 45px;
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer; 
+}
+
+.menu-detail ul li span{
+    color: grey;
+    /* vertical-align: top; */
+}
+
+.menu-detail ul li img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.menu-detail ul li:hover{
+    color: #fff;
+    background: rgb(248, 69, 4);
+    transition: 0.5s ease;
+}
+
+
+/* menu ends */
+
+
+/* card ends */
+
+.card{
+    grid-area: card;
+    border-radius: 10px;
+    background: rgb(15, 10, 10);
+    margin-left: 25px;
+}
+
+.card .container{
+    width: 90%;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.card .container  .budget1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;  
+
+}
+
+.atm{
+   
+    min-width: 100%;
+    min-height: 140px;
+    border-radius: 15px;
+    background: linear-gradient(-45deg, rgb(252, 161, 87) -400px, rgb(20, 20, 20));
+    /* margin-top: 20px; */
+}
+
+.atm-container{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.atm-info{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.atm-info small{
+    font-size: 11px;
+    margin-top: 15px;
+    color: grey;
+}
+
+.atm-info label{
+    font-size: 15px;
+}
+
+.starss{
+    display: flex;
+    gap: 10px;
+}
+
+.star1{
+    display: flex;
+    gap: 3px;
+    margin-top: 25px;
+}
+
+.starss .star1 img{
+    width: 8px;
+    height: 8px;
+    border: 100%;
+    filter: invert(1);
+    
+}
+
+.starss small{
+    color: grey;
+    padding-top: 22px;
+    font-size: 11px;
+}
+
+.cdbtm{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.cdbtm small{
+    color: gray;
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+.cdbtm label{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.reye{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+   
+}
+
+.reye .red{
+    width: 18px;
+    height: 18px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    right: 8px;
+    bottom: -0px;
+   
+}
+
+.reye .yellow{
+    width: 19px;
+    height: 19px;
+    background: rgb(255, 255, 32);
+    border-radius: 50%;
+}
+
+/* card ends */
+
+
+
+
+/* .transact starts */
+
+.transact{
+    grid-area: transact;
+    border-radius: 10px;
+    background: rgb(15, 10, 10);
+}
+
+.transact .container{
+    width: 90%;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.transact .container .budget1{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 15px;   */
+}
+
+.transact .container .budget3{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.transact .container .budget2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 17px;
+    
+}
+
+.heading{
+    color: grey;
+    font-size: 15px;
+}
+
+.plusimg{
+    filter: invert(1);
+    width: 25px;
+    height: 25px;
+    opacity: 0.5;
+}
+
+.food{
+    padding-top: 7px;
+}
+
+.save{
+    padding-top: 7px;
+}
+
+
+.transact .container .budget2 .budget3 img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.transact .container .budget2 .budget3 label{
+    font-size: 12px;
+}
+
+.transact .container .budget2 .budget3 span{
+    font-size: 10px;
+    color: grey;
+}
+
+.transact .container .budget2 .budget4 small{
+    font-size: 12px;
+    color: red;
+}
+
+#green{
+    color: green;
+}
+
+/* .transact ends */
+
+
+
+ /* report starts */
+
+
+.report{
+    grid-area: report;
+    border-radius: 10px;
+    background: rgb(15, 10, 10);
+}
+
+
+.report .container{
+    width: 90%;
+    margin: auto;
+    margin-top: 14px;
+    
+}
+
+.report .container  .budget1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;  
+}
+
+.report .container .y-axis{
+   margin-top: 2px;
+}
+
+.report .container .y-axis ul{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    list-style: none;
+}
+
+.report .container .y-axis ul li{
+    font-size: 11px;
+    color: grey;
+}
+
+.report-line{
+    max-width: 96%;
+    margin: auto;
+    position: relative;
+}
+
+.linea{
+    display: flex;
+    width: 250px;
+    transform: rotate(-90deg);
+    margin-top: -142px;
+    margin-left: -79px;
+    position: relative;
+    left: -4px;
+    
+    
+}
+
+.linea .lineorange{
+    height: 15px;
+    width: 23%;
+    border-radius: 5px;
+    background: rgb(248, 69, 4);
+    position: absolute; 
+}
+
+.linea .linegray{
+    height: 15px;
+    width: 45%;
+    border-radius: 5px;
+    background: rgb(30, 30, 30);
+}
+
+.lineb{
+    display: flex;
+    width: 250px;
+    transform: rotate(-90deg);
+    margin-top: -15px;
+    margin-left: -49px;
+    position: relative;
+    left: 20px;
+}
+
+.lineb .lineorange{
+    height: 15px;
+    width: 23%;
+    border-radius: 5px;
+    background: rgb(248, 69, 4);
+    position: absolute; 
+}
+
+.lineb .linegray{
+    height: 15px;
+    width: 45%;
+    border-radius: 5px;
+    background: rgb(30, 30, 30);
+}
+
+.linec{
+    position: relative;
+    width: 250px;
+    transform: rotate(-90deg);
+    margin-top: -15px;
+    margin-left: 55px;
+    position: relative;
+    left: -30px;
+}
+
+.linec .lineorange{
+    height: 15px;
+    width: 23%;
+    border-radius: 5px;
+    background: rgb(248, 69, 4);
+    color: rgb(248, 69, 4);
+    position: absolute; 
+}
+
+
+.linec .linegray{
+    height: 15px;
+    width: 45%;
+    border-radius: 5px;
+    background: rgb(30, 30, 30);
+    color: rgb(30, 30, 30);  
+}
+
+.lined{
+   display: flex;
+    width: 250px;
+    transform: rotate(-90deg);
+    margin-top: -15px;
+    margin-left: 40px;
+    position: relative;
+    left: 40px;
+    
+}
+
+.lined .lineorange{
+    height: 15px;
+    width: 23%;
+    border-radius: 5px;
+    background: rgb(248, 69, 4);
+    position: absolute; 
+    z-index: 1;
+}
+
+.lined .light-orange{
+    height: 15px;
+    width: 10%;
+    border-radius: 5px;
+    background: rgb(240, 168, 142);
+    position: absolute; 
+    left: 50px;
+}
+
+.lined .linegray{
+    height: 15px;
+    width: 45%;
+    border-radius: 5px;
+    background: rgb(30, 30, 30);  
+}
+
+.linee{
+    display: flex;
+    width: 250px;
+    transform: rotate(-90deg);
+    margin-top: -15px;
+    margin-left: 10px;
+    position: relative;
+    left: 125px;
+    
+}
+
+.linee .lineorange{
+    height: 15px;
+    width: 23%;
+    border-radius: 5px;
+    background: rgb(248, 69, 4);
+    position: absolute; 
+}
+
+.linee .linegray{
+    height: 15px;
+    width: 45%;
+    border-radius: 5px;
+    background: rgb(30, 30, 30); 
+}
+
+.month{
+    margin-top: 135px;
+    margin-left: 40px;
+}
+
+.month ul{
+    display: flex;
+    gap: 34px;
+    list-style: none;
+}
+
+.month ul li{
+    font-size: 11px;
+    color: grey;
+}
+
+
+
+
+ /* report ends */
+
+/* budget starts */
+
+.budget{
+    grid-area: budget;
+    border-radius: 10px;
+    background: rgb(15, 10, 10);
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.budget .container{
+    width: 90%;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.budget .container .budget1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;  
+}
+
+.budget .container .budget3{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.budget .container .budget2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 17px;
+    
+}
+
+.heading{
+    color: grey;
+    font-size: 15px;
+}
+
+.plusimg{
+    filter: invert(1);
+    width: 25px;
+    height: 25px;
+    opacity: 0.5;
+}
+
+.food{
+    padding-top: 7px;
+}
+
+.save{
+    padding-top: 7px;
+}
+
+
+.budget .container .budget2 .budget3 img{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+}
+
+.budget .container .budget2 .budget3 label{
+    font-size: 12px;
+}
+
+.budget .container .budget2 .budget3 span{
+    font-size: 10px;
+    color: grey;
+}
+
+.budget .container .budget2 .budget4 small{
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+
+/* budget ends */
+
+/* .subscribe :start */
+
+
+.subscribe{
+    grid-area: subscribe;
+    border-radius: 10px;
+    background: rgb(15, 10, 10);
+}
+
+
+.subscribe .container{
+    width: 90%;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.subscribe .container .budget1{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 15px;   */
+}
+
+.subscribe .container .budget3{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.subscribe .container .budget2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+
+.heading{
+    color: grey;
+    font-size: 15px;
+}
+
+.plusimg{
+    filter: invert(1);
+    width: 25px;
+    height: 25px;
+    opacity: 0.5;
+}
+
+.food{
+    padding-top: 7px;
+}
+
+.save{
+    padding-top: 7px;
+}
+
+
+.subscribe .container .budget2 .budget3 img{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+    border-radius: 50%;
+}
+
+.subscribe .container .budget2 .budget3 label{
+    font-size: 12px;
+    padding-top: 7px;
+}
+
+.subscribe .container .budget2 .budget3 span{
+    font-size: 10px;
+    color: grey;
+    text-transform: none;
+}
+
+.subscribe .container .budget2 .budget4 small{
+    font-size: 12px;
+    color: white;
+    opacity: 0.8;
+}
+
+/* .subscribe ends */
+
+
+/* savings :start */
+
+.savings{
+    grid-area: savings;
+    border-radius: 10px;
+    background: rgb(15, 10, 10);
+}
+
+.savings .container{
+    width: 90%;
+    margin: auto;
+    margin-top: 14px;
+    position: relative;
+}
+
+.savings .container .budget1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;  
+}
+
+.savings .container .circle{
+    position: relative;
+    left: 10px;
+    top: -5px;
+}
+
+.savings .container .circle .gray-semi{
+    width: 100px;
+    height: 50px;
+    border: 10px solid rgb(30, 30, 30);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom: none;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 40px;
+    left: -19px;
+}
+
+.savings .container .circle  .small-orange1{
+    width: 15px;
+    height: 9.5px;
+    border-radius: 15px;
+    background: rgb(248, 69, 4);
+    position: absolute;
+    top: 15px;
+    left: 44px;
+    
+}
+
+.savings .container .circle  .small-orange2{
+    width: 15px;
+    height: 9.5px;
+    border-radius: 15px;
+    background: rgb(248, 69, 4);
+    position: absolute;
+    top: 105px;
+    left: 44px;
+}
+
+.savings .container .circle  .orange-semi{
+    width: 100px;
+    height: 50px;
+    border: 10px solid rgb(248, 69, 4);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom: none;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 40px;
+    left: 29px;
+}
+
+.savings .container .circle label{
+    position: absolute;
+    font-size: 16px;
+    top: 56px;
+    left: 32px;
+}
+
+.target{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 140px;
+    margin-top: 30px;
+}
+
+.target label{
+    font-size: 12px;
+    color: grey;
+}
+
+.target span{
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+
+/* savings :end */
+
+
+
+/* loan :start */
+
+.loan{
+    grid-area: loan;
+    border-radius: 10px;
+    background: rgb(15, 10, 10);
+    margin-bottom: 20px;
+    
+}
+
+.loan .container{
+    width: 90%;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.loan .container .budget1{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.loan .container .budget2 .budget3 img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.loan .container .budget2 .budget3 label{
+    font-size: 12px;
+}
+
+
+.loan .container .budget3{
+    display: flex;
+    gap: 10px;
+    /* margin-top: -11px; */
+}
+
+.loan .container .budget2 .budget4{
+    margin-top: -2px;
+}
+
+.loan .container .budget2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;  
+}
+
+.loan .container .budget2 .budget3 label{
+    padding-top: 7px;
+    font-size: 12px;
+    color: grey;
+    margin-top: -6px;
+}
+
+.loan .container .budget2 .budget4 small{
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.loanbtm{
+    margin-top: 3px;
+}
+
+.loanbtm .da{
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+.loanbtm .da small{
+    background: rgb(30, 30, 30);
+    border-radius: 10px;
+    font-size: 9px;
+    min-width: 44%;
+    min-height: 21px;
+    opacity: 0.8;
+    text-transform: none;
+    padding-left: 14px;
+    /* padding-right: 5px; */
+    padding-top: 4px;
+    color: gray;
+}
+
+.loanbtm .line{
+    position: relative;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-left: 66px;
+    
+    
+}
+
+.loanbtm .lineorange{
+    height: 8px;
+    width: 70%;
+    border: 1px solid rgb(248, 69, 4);
+    border-radius: 10px;
+    background: rgb(248, 69, 4);
+    color: rgb(248, 69, 4);
+    position: absolute;
+    left: -30px;
+}
+
+.loanbtm .linegray{
+    height: 8px;
+    width: 100%;
+    border: 1px solid rgb(30, 30, 30);
+    border-radius: 10px;
+    background: rgb(30, 30, 30);
+    color: rgb(30, 30, 30);
+}
+
+
+/* loan :end */
+
+/* tips :start */
+
+.tips{
+    grid-area: tips;
+    border-radius: 10px;
+    background: rgb(15, 10, 10);
+    margin-bottom: 20px;
+}
+
+.tips .container{
+    width: 90%;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.tips .container p{
+    text-transform: none;
+    color: grey;
+    line-height: 1.8;
+    font-size: 12px;
+    margin-top: 11px;
+}
+
+/* tips :end */
+
+
+/* media query */
+
+@media (max-width: 1024px){
+
+    body{
+    display: grid;
+    grid-template-rows: 0.1fr 0.4fr 0.4fr  0.4fr 0.3;
+    grid-template-columns: 0.4fr 0.8fr 0.8fr;
+    grid-template-areas: 
+    'menu home home'
+    'menu card transact'
+    'menu subscribe budget'
+    'menu savings report'
+    'menu loan tips';
+}
+
+.card{
+    margin-left: 0px;
+}
+
+.budget{
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.subscribe .container .budget1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;  
+}
+
+.subscribe .container .budget3{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 45px;
+}
+
+}
+
+
+
+
+@media (max-width: 768px){
+
+    body{
+    display: grid;
+    grid-template-rows: 0.1fr 0.4fr 0.4fr 0.4fr  0.4fr 0.4fr 0.4fr 0.4fr 0.4fr ;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-areas: 
+    'menu home'
+    'menu card'
+    'menu transact'
+    'menu report'
+    'menu budget'
+    'menu subscribe'
+    'menu savings'
+    'menu loan'
+    'menu tips';
+}
+
+.card{
+    margin-left: 0px;
+}
+
+
+.savings .container .circle{
+    position: relative;
+    left: 30px;
+    top: -22px;
+    margin-bottom: 120px;
+}
+
+.target{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 160px;
+    margin-top: -40px;
+    position: absolute;
+    top: 65px;
+}
+
+.loan{
+    margin-bottom: 0px;
+    
+}
+
+}
